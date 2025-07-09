@@ -1,0 +1,15 @@
+call_recognition:
+    ros__parameters:
+        confidence_threshold : 20   # 离线命令词识别置信度
+        time_per_order : 10         # 最大识别录音持续时长(0~10s)
+
+voice_control:
+    ros__parameters:
+        appid: "d7fd6a35"          # 语音识别应用ID
+        
+human_mic:
+    ros__parameters:
+        usart_port_name: "/dev/wheeltec_mic"  # 串口设备名,这个维持不变
+        serial_baud_rate: 115200              # 串口波特率
+
+
